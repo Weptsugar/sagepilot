@@ -1,0 +1,75 @@
+[
+  {
+    "timestamp": "2026-07-14T10:00:00Z",
+    "event_type": "payment_confirmed",
+    "payload": {
+      "order_id": "SP-9982",
+      "amount": 4500,
+      "currency": "INR",
+      "customer_name": "Rohan Sharma",
+      "customer_phone": "+919876543210"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T14:00:00Z",
+    "event_type": "shipment_created",
+    "payload": {
+      "carrier": "Delhivery",
+      "tracking_number": "DEL123456789",
+      "estimated_delivery": "2026-07-17T18:00:00Z"
+    }
+  },
+  {
+    "timestamp": "2026-07-15T18:00:00Z",
+    "event_type": "shipment_delayed",
+    "payload": {
+      "carrier": "Delhivery",
+      "reason": "Heavy rain and local flooding near distribution hub",
+      "new_estimated_delivery": "2026-07-20T18:00:00Z"
+    }
+  },
+  {
+    "timestamp": "2026-07-17T18:00:00Z",
+    "event_type": "no_update_for_n_hours",
+    "payload": {
+      "hours_since_last_event": 48
+    }
+  },
+  {
+    "timestamp": "2026-07-18T09:30:00Z",
+    "event_type": "customer_message_received",
+    "payload": {
+      "message": "Hi, my order SP-9982 was supposed to be delivered yesterday. The tracking link hasn't updated in two days. Can you tell me when I will receive it?"
+    }
+  },
+  {
+    "timestamp": "2026-07-20T10:00:00Z",
+    "event_type": "no_update_for_n_hours",
+    "payload": {
+      "hours_since_last_event": 48
+    }
+  },
+  {
+    "timestamp": "2026-07-20T17:45:00Z",
+    "event_type": "delivered",
+    "payload": {
+      "delivery_timestamp": "2026-07-20T17:30:00Z",
+      "signed_by": "Rohan Sharma"
+    }
+  },
+  {
+    "timestamp": "2026-07-21T11:15:00Z",
+    "event_type": "customer_message_received",
+    "payload": {
+      "message": "The product fit is smaller than expected. I would like to request an exchange for a size larger or a refund."
+    }
+  },
+  {
+    "timestamp": "2026-07-21T11:45:00Z",
+    "event_type": "refund_requested",
+    "payload": {
+      "reason": "Size issue, requesting full refund",
+      "resolved": true
+    }
+  }
+]

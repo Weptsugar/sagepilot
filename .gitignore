@@ -1,0 +1,10 @@
+# Local environment variables containing secrets
+b2_simulation/.env
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
